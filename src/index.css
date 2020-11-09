@@ -1,3 +1,46 @@
 html, body {
-    background: #666;;
+    background: #fff;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font: 20px Arial, sans-serif;
+}
+
+.holy-grail {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.holy-grail__header {
+    background: #00faff;
+}
+
+.holy-grail__body {
+    display: flex;
+    flex: 1;
+    background: #00e4fd;
+}
+
+.holy-grail__body__main {
+    flex: 1;
+}
+
+.holy-grail__body__nav {
+    /* 12em is the width of the columns */
+    flex: 0 0 12em;
+    /* put the nav on the left */
+    order: -1;
+    background: #00b2e6;
+}
+
+.holy-grail__body__aside {
+    /* 12em is the width of the columns */
+    flex: 0 0 12em;
+    background: #005382;
+}
+
+.holy-grail__footer {
+    background: #002c47;
+    color: #fff;
 }
