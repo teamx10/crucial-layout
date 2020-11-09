@@ -18,6 +18,7 @@ html, body {
 
 .holy-grail__body {
     display: flex;
+    flex-direction: column;
     flex: 1;
     background: #00e4fd;
 }
@@ -43,4 +44,18 @@ html, body {
 .holy-grail__footer {
     background: #002c47;
     color: #fff;
+}
+
+@media (min-width: 768px) {
+    .holy-grail__body {
+        flex-direction: row;
+        flex: 1;
+    }
+    .holy-grail__body__main {
+        flex: 1;
+    }
+    .holy-grail__body__nav, .holy-grail__body__aside {
+        /* 12em is the width of the columns */
+        flex: 0 0 12em;
+    }
 }
